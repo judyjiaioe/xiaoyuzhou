@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小宇宙 - 发现</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="discover">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <div class="time">14:30</div>
+        <div class="icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <!-- 顶部导航栏 -->
+    <div class="flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">发现</h1>
+        <div class="flex gap-3">
+            <i class="fas fa-search text-lg"></i>
+            <i class="fas fa-qrcode text-lg"></i>
+        </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+        <!-- 轮播图 -->
+        <div class="card p-0 overflow-hidden">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="轮播图" class="w-full h-40 object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                    <h3 class="text-white font-bold">2023年度播客盛典</h3>
+                    <p class="text-white text-sm opacity-80">探索年度最佳播客内容</p>
+                </div>
+                <div class="absolute bottom-4 right-4 flex gap-1">
+                    <div class="w-2 h-2 rounded-full bg-white opacity-50"></div>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <div class="w-2 h-2 rounded-full bg-white opacity-50"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分类导航 -->
+        <div class="grid grid-cols-5 gap-2 my-4">
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-chart-line text-primary"></i>
+                </div>
+                <span class="text-xs">排行榜</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-book text-blue-500"></i>
+                </div>
+                <span class="text-xs">知识</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-briefcase text-green-500"></i>
+                </div>
+                <span class="text-xs">商业</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-heart text-red-500"></i>
+                </div>
+                <span class="text-xs">生活</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-ellipsis-h text-yellow-500"></i>
+                </div>
+                <span class="text-xs">更多</span>
+            </div>
+        </div>
+
+        <!-- 热门话题 -->
+        <div class="mb-4">
+            <div class="flex justify-between items-center mb-3">
+                <h2 class="title">热门话题</h2>
+                <span class="text-primary text-sm">更多</span>
+            </div>
+            <div class="flex overflow-x-auto pb-2 gap-3" style="scrollbar-width: none;">
+                <div class="flex-shrink-0 w-40 rounded-lg overflow-hidden shadow">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="话题" class="w-full h-24 object-cover">
+                    <div class="p-2">
+                        <div class="text-sm font-medium">#科技创新</div>
+                        <div class="text-xs text-light">328个播客</div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-40 rounded-lg overflow-hidden shadow">
+                    <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="话题" class="w-full h-24 object-cover">
+                    <div class="p-2">
+                        <div class="text-sm font-medium">#旅行见闻</div>
+                        <div class="text-xs text-light">156个播客</div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-40 rounded-lg overflow-hidden shadow">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="话题" class="w-full h-24 object-cover">
+                    <div class="p-2">
+                        <div class="text-sm font-medium">#心理健康</div>
+                        <div class="text-xs text-light">203个播客</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 精选播客 -->
+        <div class="card">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="title">精选播客</h2>
+                <span class="text-primary text-sm">查看全部</span>
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h3 class="text-xs font-medium text-center mt-2">故事FM</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h3 class="text-xs font-medium text-center mt-2">忽左忽右</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h3 class="text-xs font-medium text-center mt-2">日谈公园</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h3 class="text-xs font-medium text-center mt-2">跳岛FM</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h3 class="text-xs font-medium text-center mt-2">硅谷早知道</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h3 class="text-xs font-medium text-center mt-2">得到FM</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- 新锐播客 -->
+        <div class="card">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="title">新锐播客</h2>
+                <span class="text-primary text-sm">更多</span>
+            </div>
+            <div class="list-item">
+                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                <div class="list-item-content">
+                    <h3 class="small-title">创业内幕</h3>
+                    <p class="text-sm text-light">深度剖析创业故事背后的真相</p>
+                    <div class="flex gap-2 mt-1">
+                        <span class="tag">创业</span>
+                        <span class="tag">商业</span>
+                    </div>
+                </div>
+                <button class="subscribe-btn">
+                    <i class="fas fa-plus"></i> 订阅
+                </button>
+            </div>
+            <div class="list-item">
+                <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                <div class="list-item-content">
+                    <h3 class="small-title">设计对谈</h3>
+                    <p class="text-sm text-light">与顶尖设计师的深度交流</p>
+                    <div class="flex gap-2 mt-1">
+                        <span class="tag">设计</span>
+                        <span class="tag">艺术</span>
+                    </div>
+                </div>
+                <button class="subscribe-btn">
+                    <i class="fas fa-plus"></i> 订阅
+                </button>
+            </div>
+        </div>
+
+        <!-- 热门榜单 -->
+        <div class="card">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="title">热门榜单</h2>
+                <span class="text-primary text-sm">全部榜单</span>
+            </div>
+            <div class="list-item">
+                <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center mr-2 flex-shrink-0">1</div>
+                <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                <div class="list-item-content">
+                    <h3 class="small-title">科技早知道</h3>
+                    <p class="text-sm text-light">36氪旗下科技播客</p>
+                </div>
+                <i class="fas fa-chevron-right text-light"></i>
+            </div>
+            <div class="list-item">
+                <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center mr-2 flex-shrink-0">2</div>
+                <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                <div class="list-item-content">
+                    <h3 class="small-title">故事FM</h3>
+                    <p class="text-sm text-light">来自普通人的真实故事</p>
+                </div>
+                <i class="fas fa-chevron-right text-light"></i>
+            </div>
+            <div class="list-item">
+                <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center mr-2 flex-shrink-0">3</div>
+                <img src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                <div class="list-item-content">
+                    <h3 class="small-title">忽左忽右</h3>
+                    <p class="text-sm text-light">文化杂谈</p>
+                </div>
+                <i class="fas fa-chevron-right text-light"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 迷你播放器 -->
+    <div class="mini-player">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+        <div class="mini-player-info">
+            <div class="mini-player-title">科技早知道</div>
+            <div class="mini-player-author">S7E23: 苹果发布会前瞻</div>
+        </div>
+        <button class="btn-icon btn-secondary">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <a href="home.html" class="tab-item" data-tab="home">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+        </a>
+        <a href="discover.html" class="tab-item active" data-tab="discover">
+            <i class="fas fa-compass"></i>
+            <span>发现</span>
+        </a>
+        <a href="player.html" class="tab-item" data-tab="player">
+            <i class="fas fa-headphones"></i>
+            <span>播放</span>
+        </a>
+        <a href="podcast_detail.html" class="tab-item" data-tab="podcast">
+            <i class="fas fa-podcast"></i>
+            <span>节目</span>
+        </a>
+        <a href="profile.html" class="tab-item" data-tab="profile">
+            <i class="fas fa-user"></i>
+            <span>我的</span>
+        </a>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 

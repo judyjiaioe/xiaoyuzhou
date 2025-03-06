@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小宇宙 - 个人中心</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="profile">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <div class="time">14:30</div>
+        <div class="icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <!-- 顶部导航栏 -->
+    <div class="flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">我的</h1>
+        <div class="flex gap-3">
+            <a href="settings.html">
+                <i class="fas fa-cog text-lg"></i>
+            </a>
+            <i class="fas fa-qrcode text-lg"></i>
+        </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+        <!-- 用户信息 -->
+        <div class="flex items-center p-4 bg-white rounded-lg shadow mb-4">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="用户头像" class="avatar large">
+            <div class="ml-4 flex-1">
+                <h2 class="text-lg font-bold">小宇宙用户</h2>
+                <p class="text-sm text-light">ID: xiaoyuzhou123</p>
+                <div class="flex gap-2 mt-2">
+                    <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">已订阅 28 个播客</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right text-light"></i>
+        </div>
+
+        <!-- 会员信息 -->
+        <div class="bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg p-4 mb-4 text-white shadow">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold">小宇宙会员</h3>
+                    <p class="text-sm opacity-80 mt-1">解锁更多高级功能</p>
+                </div>
+                <button class="bg-white text-purple-700 px-4 py-1 rounded-full text-sm font-medium">立即开通</button>
+            </div>
+        </div>
+
+        <!-- 功能区 -->
+        <div class="grid grid-cols-4 gap-2 bg-white p-4 rounded-lg shadow mb-4">
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-download text-primary"></i>
+                </div>
+                <span class="text-xs">下载</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-history text-blue-500"></i>
+                </div>
+                <span class="text-xs">历史</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-heart text-green-500"></i>
+                </div>
+                <span class="text-xs">收藏</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-star text-yellow-500"></i>
+                </div>
+                <span class="text-xs">评分</span>
+            </div>
+        </div>
+
+        <!-- 我的订阅 -->
+        <div class="bg-white rounded-lg shadow mb-4">
+            <div class="flex justify-between items-center p-4 border-b border-gray-100">
+                <h3 class="font-bold">我的订阅</h3>
+                <span class="text-primary text-sm">查看全部</span>
+            </div>
+            <div class="grid grid-cols-4 gap-3 p-4">
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h4 class="text-xs text-center mt-1 truncate w-full">科技早知道</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h4 class="text-xs text-center mt-1 truncate w-full">故事FM</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h4 class="text-xs text-center mt-1 truncate w-full">忽左忽右</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover">
+                    <h4 class="text-xs text-center mt-1 truncate w-full">日谈公园</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- 我的收藏 -->
+        <div class="bg-white rounded-lg shadow mb-4">
+            <div class="flex justify-between items-center p-4 border-b border-gray-100">
+                <h3 class="font-bold">我的收藏</h3>
+                <span class="text-primary text-sm">查看全部</span>
+            </div>
+            <div class="list-item">
+                <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                <div class="list-item-content">
+                    <h4 class="small-title">S7E23: 苹果发布会前瞻</h4>
+                    <p class="text-sm text-light">科技早知道 · 35分钟</p>
+                </div>
+                <i class="fas fa-ellipsis-v text-light"></i>
+            </div>
+            <div class="list-item">
+                <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                <div class="list-item-content">
+                    <h4 class="small-title">EP102: 一个普通人的奋斗故事</h4>
+                    <p class="text-sm text-light">故事FM · 42分钟</p>
+                </div>
+                <i class="fas fa-ellipsis-v text-light"></i>
+            </div>
+        </div>
+
+        <!-- 我的评论 -->
+        <div class="bg-white rounded-lg shadow mb-4">
+            <div class="flex justify-between items-center p-4 border-b border-gray-100">
+                <h3 class="font-bold">我的评论</h3>
+                <span class="text-primary text-sm">查看全部</span>
+            </div>
+            <div class="p-4">
+                <div class="flex items-start mb-3">
+                    <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                    <div class="ml-3 flex-1">
+                        <h4 class="text-sm font-medium">科技早知道 · S7E23</h4>
+                        <p class="text-xs text-light mt-1">2023-09-10</p>
+                        <p class="text-sm mt-2">这期节目信息量很大，对苹果新品有了更全面的了解，主播分析很到位！</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+                    <div class="ml-3 flex-1">
+                        <h4 class="text-sm font-medium">故事FM · EP102</h4>
+                        <p class="text-xs text-light mt-1">2023-09-05</p>
+                        <p class="text-sm mt-2">很感人的故事，让我对生活有了新的思考。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 迷你播放器 -->
+    <div class="mini-player">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="播客封面" class="podcast-cover small">
+        <div class="mini-player-info">
+            <div class="mini-player-title">科技早知道</div>
+            <div class="mini-player-author">S7E23: 苹果发布会前瞻</div>
+        </div>
+        <button class="btn-icon btn-secondary">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <a href="home.html" class="tab-item" data-tab="home">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+        </a>
+        <a href="discover.html" class="tab-item" data-tab="discover">
+            <i class="fas fa-compass"></i>
+            <span>发现</span>
+        </a>
+        <a href="player.html" class="tab-item" data-tab="player">
+            <i class="fas fa-headphones"></i>
+            <span>播放</span>
+        </a>
+        <a href="podcast_detail.html" class="tab-item" data-tab="podcast">
+            <i class="fas fa-podcast"></i>
+            <span>节目</span>
+        </a>
+        <a href="profile.html" class="tab-item active" data-tab="profile">
+            <i class="fas fa-user"></i>
+            <span>我的</span>
+        </a>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 
